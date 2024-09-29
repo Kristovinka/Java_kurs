@@ -25,9 +25,7 @@ public class HomeWork_14 {
             int i = 0;
             int sum = 0;
             while (i < arr.length) {
-
                 if (arr[i] % 2 == 0)  sum += arr[i];
-
                 i++;
             }
             return sum;
@@ -37,6 +35,7 @@ public class HomeWork_14 {
 
     public static int[] scanArray(int[] arr) {
         int i = 0;
+
         while (i < arr.length) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите " + (i+1) + " элемент массива: ");
