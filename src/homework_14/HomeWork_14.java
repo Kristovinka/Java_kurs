@@ -16,6 +16,7 @@ public class HomeWork_14 {
 
             scanArray(array);
             System.out.println(Arrays.toString(array));
+
             int summa = sumArray(array);
             System.out.println("Cуммa всех четных элементов в массиве: " + summa);
         }
