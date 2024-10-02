@@ -98,10 +98,12 @@ public class MagicArray {
     // Удаление элемента по индексу
     int remove(int index) {
       if (index >=0 && index < cursor) {
+
           int del = array[index];
           for (int i = index; i < cursor; i++) {
               array[i] = array[i+1];
-          } cursor --;
+          }
+            cursor --;
             return del;
         }
         System.out.println("\n!!!!Нет такого indexa в массиве");
