@@ -101,7 +101,7 @@ public class MagicArray {
           int del = array[index];
           for (int i = index; i < cursor; i++) {
               array[i] = array[i+1];
-          }
+          } cursor --;
             return del;
         }
         System.out.println("\n!!!!Нет такого indexa в массиве");
