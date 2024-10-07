@@ -28,7 +28,7 @@ public class Dog {
 
     public void training() {
 
-        if (heightJump <= heightJumpStart * 2 )
+        if (heightJump < heightJumpStart * 2 )
         this.heightJump = heightJump + 10;
     }
 
