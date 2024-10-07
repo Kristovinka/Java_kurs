@@ -28,5 +28,5 @@ public class mainCalculator {
             num = getInt();
         }
         return num;
-    } //Тут могло быть 2 задание, но уже поздно и хочется спать (
+    }
 }
