@@ -1,9 +1,22 @@
 package homework_17;
 
 public class Employee {
+
     private String name;
     private int age;
     private double salary;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
 
     public void setAge(int age) {
         if (age < 15 || age > 70) return;

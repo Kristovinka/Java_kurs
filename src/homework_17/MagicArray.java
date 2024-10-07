@@ -9,7 +9,7 @@ public class MagicArray {
     }
 
     // Добавление в массив одного элемента
-    void add (int value) {
+    public void add (int value) {
 
         // Проверка. Есть ли вообще свободное место во внутреннем массиве
         // Если места нет - нужно добавить место
@@ -22,11 +22,12 @@ public class MagicArray {
         cursor++;
     }
 
-    void add(int... numbers) {
+    public void add(int... numbers) {
         // с numbers я могу обращаться точно также, как со ссылкой на массив int
         // System.out.println("Приняли несколько интов. А именно: " + numbers.length);
         // System.out.println("Есть индекс у каждого инта, как в массиве. По индексом 0: " + numbers[0]);
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++)
+        {
             add(numbers[i]);
         }
 
@@ -34,7 +35,7 @@ public class MagicArray {
 
 
     // Динамическое расширение массива
-    void expandArray() {
+    private void expandArray() {
         System.out.println("Расширяем массив! Курсор = " + cursor);
         /*
         1. создать новый массив бОльшего размера (в 2 раза больше)
@@ -70,12 +71,12 @@ public class MagicArray {
     }
 
     // Текущее количество элементов в массиве
-    int size() {
+    public int size() {
         return cursor;
     }
 
     // Возвращает значение по индексу
-    int get(int index) {
+    public int get(int index) {
         if (index >=0 && index < cursor) {
             return array[index];
         }
@@ -108,6 +109,14 @@ public class MagicArray {
         }
         System.out.println("\n!!!!Нет такого indexa в массиве");
         return Integer.MIN_VALUE;
+    }
+
+    public int lastIndex (int value) {
+
+        for( int i= cursor - 1; i<= 0; i--){
+            if(array[i] == value) return i;
+        }
+        return -1;
     }
 
 
