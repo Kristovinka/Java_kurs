@@ -19,15 +19,16 @@ package homework_18;
 public class Dog {
     private String name;
     private int heightJump ;
+    static int heightJumpStart ;
 
-    //Тут могло быть 2 задание, но уже поздно и хочется спать (
-    // onli jumpBarrier
+    //Тут могло быть 2 задание,  onli jumpBarrier +
     public void jump() {
-
+        heightJumpStart = heightJump;
     }
 
     public void training() {
 
+        if (heightJump <= heightJumpStart * 2 )
         this.heightJump = heightJump + 10;
     }
 
