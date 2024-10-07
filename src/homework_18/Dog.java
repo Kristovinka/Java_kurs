@@ -17,6 +17,7 @@ package homework_18;
     */
 
 public class Dog {
+
     private String name;
     private int heightJump ;
     static int heightJumpStart ;
