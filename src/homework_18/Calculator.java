@@ -28,6 +28,17 @@ public class Calculator {
       return div;
     }
 
+    public static double circumference(int radius) {
+
+      return  PI * Math.pow(radius,2);
+    }
+
+    public static int areaCircle(int val1, int val2) {
+      int div = val1 / val2;
+      return div;
+    }
+
+
 }
 
 

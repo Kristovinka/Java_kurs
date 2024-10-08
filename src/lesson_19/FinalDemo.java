@@ -34,6 +34,7 @@ public class FinalDemo {
         colors[0] = "green";
         ints[0] = 1;
         this.x = 100;
+
         // Нельзя присвоить ссылку на другой объект
         // this.array = new int[20];
 
