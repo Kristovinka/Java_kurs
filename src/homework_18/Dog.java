@@ -32,6 +32,7 @@ public class Dog {
         if (heightJump < heightJumpStart * 2 )
 
             this.heightJump = heightJump + 10;
+        else System.out.println(" i can't ");
     }
 
     public void jumpBarrier(int heightBarrier) {
