@@ -28,6 +28,7 @@ public class mainCalculator {
         } else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
             scanner.next();//рекурсия
+
             num = getInt();
         }
         return num;
