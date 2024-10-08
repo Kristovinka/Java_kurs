@@ -19,6 +19,7 @@ public class mainCalculator {
 
     public static int getInt() {
         System.out.println("Введите число:");
+
         int num;
         if (scanner.hasNextInt()) {
             num = scanner.nextInt();
