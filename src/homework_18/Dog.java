@@ -39,6 +39,7 @@ public class Dog {
         if (heightJumpStart*2 >= heightBarrier){
 
             while (this.heightJump < heightBarrier){
+
                 training();
             }
             System.out.println(" i can");
