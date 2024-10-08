@@ -1,4 +1,4 @@
-package staticBlockDemo;
+package lesson_18.staticBlockDemo;
 
 import java.util.Arrays;
 

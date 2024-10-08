@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    //Тут могли быть приватные поля, но в задании этого не требуется
+    public static final double PI = 3.141519;
+
     public static int addition(int val1, int val2) {
 
         int add = val1 + val2;

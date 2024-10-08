@@ -1,4 +1,4 @@
-package staticBlockDemo;
+package lesson_18.staticBlockDemo;
 
 public class Test1 {
     public static void main(String[] args) {
