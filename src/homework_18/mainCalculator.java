@@ -23,6 +23,7 @@ public class mainCalculator {
 
         int num;
         if (scanner.hasNextInt()) {
+
             num = scanner.nextInt();
         } else {
             System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
