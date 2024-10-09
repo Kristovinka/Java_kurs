@@ -7,6 +7,7 @@ public class Main {
         Rectangle rectangle = new Rectangle("Rectangle");
         rectangle.setDimensions(2.4,3.5);
         rectangle.calculateArea();
+
         rectangle.setColor("read");
         rectangle.displayInfo();
 
@@ -14,6 +15,7 @@ public class Main {
 
         System.out.println("    - Circle obj - \n");
         Circle circle = new Circle("Circle");
+
         circle.setRadius(9);
         circle.calculateArea();
 
