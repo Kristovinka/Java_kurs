@@ -11,6 +11,7 @@ public class mainCalculator {
         int num2 = getInt();
         //Тут мог быть switch с проверкой на знак, но уже поздно и хочется спать (
         System.out.println("сложение: " + Calculator.addition(num1,num2));
+
         System.out.println("вычитание: " + Calculator.subtraction(num1,num2));
 
         System.out.println("умножение: " + Calculator.multiplication(num1,num2));
