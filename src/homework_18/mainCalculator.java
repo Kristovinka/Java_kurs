@@ -14,6 +14,7 @@ public class mainCalculator {
         System.out.println("вычитание: " + Calculator.subtraction(num1,num2));
 
         System.out.println("умножение: " + Calculator.multiplication(num1,num2));
+
         System.out.println("деление: " + Calculator.division(num1,num2) + "," + num1%num2);
 
         System.out.println("\n Вычисление длины окружности и площади круга: \n принимаю радиус");
