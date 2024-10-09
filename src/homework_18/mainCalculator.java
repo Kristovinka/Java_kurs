@@ -18,7 +18,8 @@ public class mainCalculator {
 
         System.out.println("\n Вычисление длины окружности и площади круга: \n принимаю радиус");
         int radius = getInt();
-        System.out.println(" Длина окружности и площадь круга: " + Calculator.circumference(radius) );
+        System.out.println(" Длина окружности : " + Calculator.circumference(radius) );
+        System.out.println(" Площадь круга: " + Calculator.areaCircle(radius) );
 
     }
 

@@ -30,12 +30,12 @@ public class Calculator {
 
     public static double circumference(int radius) {
 
-      return  PI * Math.pow(radius,2);
+      return 2 * PI * radius;
     }
 
-    public static int areaCircle(int val1, int val2) {
-      int div = val1 / val2;
-      return div;
+    public static double areaCircle(int radius) {
+
+        return  PI * Math.pow(radius,2);
     }
 
 
