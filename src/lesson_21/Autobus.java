@@ -152,9 +152,13 @@ public class Autobus {
     }
 
     public String toString() {
-        return "Autobus: {id: " + id + ", capacity: " + capacity +
+
+        String output = "Autobus: {id: " + id + ", capacity: " + capacity +
                 "; driver: " + driver.toString() +
                 "; autopilot: " + autopilot.toString() +
                 "}";
+        StringBuilder string1 = new StringBuilder();
+        string1.append(output);
+        return output;
     }
 }
