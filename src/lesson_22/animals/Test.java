@@ -1,4 +1,4 @@
-package lesson_22.sticPoly;
+package lesson_22.animals;
 
 public class Test {
     private String title;
