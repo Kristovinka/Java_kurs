@@ -3,7 +3,6 @@ package homework_22.task_2;
 public class TestMain {
     public static void main(String[] args) {
 
-
     Vehicle vehicle1 = new Car();
     Vehicle vehicle2 = new Bicycle();
     Vehicle vehicle3 = new Motorcycle();
