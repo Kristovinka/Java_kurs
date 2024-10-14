@@ -4,6 +4,7 @@ import lesson_22.animals.Animal;
 
 public class PersonApp {
     public static void main(String[] args) {
+
         Paladin paladin = new Paladin();
         paladin.attack();
         paladin.upgrade();
