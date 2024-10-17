@@ -12,8 +12,8 @@ public class MagicArray<T,U> {
 
 
     public void printTwoLists(MyArrayList<?> array) {
-        for (T value : array) {
-            System.out.println(value + " ");
-        }
+//        for (T value : array) {
+//            System.out.println(value + " ");
+//        }
     }
 }
