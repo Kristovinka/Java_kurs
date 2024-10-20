@@ -7,7 +7,7 @@ public class Person {
 
     public Person(String email, String password) {
         setEmail(email);
-        this.password = password;
+        setPassword(password);
     }
 
     public String getEmail() {
@@ -90,7 +90,9 @@ public class Person {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        if (isPasswordValid(password)) {
+            this.password = password;
+        }
     }
 
     @Override
