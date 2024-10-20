@@ -7,7 +7,7 @@ public class PersonApp {
         System.out.println(person);
 
         person.setPassword("djdjqhf");
-        person.setEmail("djdjqhf");
+        person.setEmail(".g,mrmkj");
         System.out.println(person);
 
         person.setPassword("sakla@gmail.com");
