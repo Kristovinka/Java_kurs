@@ -11,7 +11,7 @@ public class PersonApp {
         System.out.println(person);
 
         person.setPassword("sakla@gmail.com");
-        person.setEmail("Aaa5a-hj");
+        person.setEmail("A1a5a-hj43");
         System.out.println(person);
 
 

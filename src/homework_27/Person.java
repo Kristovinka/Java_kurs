@@ -78,7 +78,7 @@ public class Person {
         if (indexAt == 0) return false;
 
        // 6. Первый символ - должна быть буква
-        int firstChar = email.charAt(0);
+        char firstChar = email.charAt(0);
         if (!Character.isAlphabetic(firstChar)) return false;
 
         return true;
