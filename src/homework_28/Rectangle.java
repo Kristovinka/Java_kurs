@@ -47,6 +47,12 @@ public class Rectangle {
             if ((list.get(i).equals(list.get(i + 1)))) list.remove(i);
             i ++;
         }
+                 // Реализациa по заданию
+
+//        while (!(list.get(i).equals(obj))){
+//            if ((list.get(i).equals(obj))) list.remove(i);
+//            i ++;
+//        }
     }
 
     @Override
