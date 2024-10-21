@@ -149,7 +149,7 @@ private boolean isPasswordValid(String password) {
             task5 = true;
         }
     }
-
+   // System.out.printf("%s| %s| %s| %s| %s\n", task1,task2,task3,task4,task5);
     return task1 && task2 && task3 && task4 && task5;
     }
 }

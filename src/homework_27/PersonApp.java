@@ -6,12 +6,12 @@ public class PersonApp {
         Person person = new Person("fei@lhh.com", "password");
         System.out.println(person);
 
-        person.setPassword("djdjqhf");
         person.setEmail(".g,mrmkj");
+        person.setPassword("djFj-=0qhf");
         System.out.println(person);
 
-        person.setPassword("sakla@gmail.com");
-        person.setEmail("A1a5a-hj43");
+        person.setEmail("sakla@gmail.com");
+        person.setPassword("A1a5a-hj43");
         System.out.println(person);
 
 
