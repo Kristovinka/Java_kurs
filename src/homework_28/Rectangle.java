@@ -42,17 +42,17 @@ public class Rectangle {
     }
 
     public void removeDuplicates(List<Rectangle> list, Rectangle obj){
-        int i = 0;
-        while (!(list.get(i).equals(list.get(i + 1)))){
-            if ((list.get(i).equals(list.get(i + 1)))) list.remove(i);
-            i ++;
-        }
-                 // Реализациa по заданию
-
-//        while (!(list.get(i).equals(obj))){
-//            if ((list.get(i).equals(obj))) list.remove(i);
+//        int i = 0;
+//        while (!(list.get(i).equals(list.get(i + 1)))){
+//            if ((list.get(i).equals(list.get(i + 1)))) list.remove(i);
 //            i ++;
 //        }
+                 // Реализациa по заданию
+        int i = 0;
+        while (!(list.get(i).equals(obj))){
+            if ((list.get(i).equals(obj))) list.remove(i);
+            i ++;
+        }
     }
 
     @Override
