@@ -29,7 +29,7 @@ public class RectangleTest {
         // task 3
 
 
-        MyList<Rectangle> rectangles = new MyArrayList<>();
+        MyArrayList<Rectangle> rectangles = new MyArrayList<>();
         rectangles.add(new Rectangle(5.0, 3.0));
         rectangles.add(new Rectangle(4.0, 2.0));
         rectangles.add(new Rectangle(5.0, 3.0)); // Дубликат

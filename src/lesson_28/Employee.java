@@ -13,31 +13,36 @@ public class Employee {
         this.dateOfBirth = dateOfBirth;
     }
 
-    @Override
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (this == obj) return true; // link na odin i tot je obj
+//        if (!(obj instanceof Employee)) return false; // Proverka na vosmojnoct kasting v Employee
+//        Employee employee = (Employee) obj;
+//
+//       // firstName.equals(employee.firstName);
+//       return Objects.equals(firstName,employee.firstName)&&
+//               Objects.equals(lastName,employee.lastName) &&
+//               Objects.equals(dateOfBirth,employee.dateOfBirth);
+//    }
+
+
     public boolean equals(Object obj) {
-        if (this == obj) return true; // link na odin i tot je obj
-        if (!(obj instanceof Employee)) return false; // Proverka na vosmojnoct kasting v Employee
+        if (this == obj) return true; // Ссылки ссылаются на один и тот же объект
+        if (!(obj instanceof Employee)) return false; // Проверка на возможность привести к Employee
         Employee employee = (Employee) obj;
 
-       // firstName.equals(employee.firstName);
-       return Objects.equals(firstName,employee.firstName)&&
-               Objects.equals(lastName,employee.lastName) &&
-               Objects.equals(dateOfBirth,employee.dateOfBirth);
+        // При таком сравнение возможно появление NPE
+        // firstName.equals(employee.firstName);
+        // null.equals(employee.firstName); -> аварийное завершение программы
+        // Objects.equals(null, employee.firstName) -> просто вернет false
+
+        // При сравнении любого объекта с null должно возвращаться false
+
+        // Безопасное сравнение объектов, учитывая возможность null значений
+        return Objects.equals(firstName, employee.firstName) &&
+                Objects.equals(lastName, employee.lastName) &&
+                Objects.equals(dateOfBirth, employee.dateOfBirth);
     }
-
-
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Employee employee = (Employee) o;
-//        return Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(dateOfBirth, employee.dateOfBirth);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(firstName, lastName, dateOfBirth);
-//    }
 
     public String getFirstName() {
         return firstName;

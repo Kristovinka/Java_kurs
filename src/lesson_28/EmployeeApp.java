@@ -16,6 +16,8 @@ public class EmployeeApp {
         System.out.println("employee2 == employee3: " + (employee2 == employee3));
 
         System.out.println("employee2.equals(employee3): " + (employee2.equals(employee3)));
+
         System.out.println("employee1.equals(employee2): " + (employee1.equals(employee2)));
+
     }
 }

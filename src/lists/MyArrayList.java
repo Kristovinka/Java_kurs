@@ -1,8 +1,23 @@
 package lists;
 
 import java.lang.reflect.Array;
+import java.util.Iterator;
 
-public class MyArrayList<T> implements MyList<T> {
+
+    /*
+    Iterable - означает, что все объекты этого класса можно перебирать (итерировать). Содержит всего один метод,
+    который возвращает итератор (тот самый объект-закладку, который позволяет перебирать коллекцию)
+
+    Iterator<T> iterator() - возвращает итератор для коллекции
+
+    // Iterator - собственно итератор, который позволяет обходить коллекцию.
+    boolean hasNext() - есть ли следующий элемент
+    T next() -> возвращает следующий элемент
+    void remove() - не обязательный. Удаляет последний возвращенный элемент.
+
+     */
+
+public class MyArrayList<T> implements MyList<T>, Iterable<T> {
     private T[] array;
     private int cursor; // присвоено значение по умолчанию = 0;
 
@@ -230,14 +245,47 @@ public class MyArrayList<T> implements MyList<T> {
 
         return result;
 
+
 //          Этот код вызывает ошибку
 //        T[] result = (T[]) new Object[cursor];
 //        for (int i = 0; i < result.length; i++) {
 //            result[i] = array[i];
 //        }
 
+
     }
-}
+
+    @Override
+    public Iterator<T> iterator() {
+        // написать имплементацию Iterator<T>
+        return new MyIterator();
+    }
+
+    private class MyIterator implements Iterator<T> {
+
+        int currentIndex = 0;
+
+        // boolean hasNext() - есть ли следующий элемент
+
+
+        @Override
+        public boolean hasNext() {
+            return currentIndex < cursor;
+        }
+
+        //  T next() -> возвращает следующий элемент
+        @Override
+        public T next() {
+            return array[currentIndex++];
+//            T value = array[currentIndex];
+//            currentIndex++;
+//            return value;
+        }
+    } // End MyIterator
+
+
+
+} // Класс MyArrayList
 
 /*
 1. Добавлять в массив элемент (не думая об индексах, размере массива) ++
