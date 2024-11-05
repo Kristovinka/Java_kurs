@@ -36,6 +36,7 @@ public class SportsmanApp {
             @Override
             public int compare(Sportsman sportsman1, Sportsman sportsman2) {
                 return sportsman1.getName().compareTo(sportsman2.getName());
+                //return Integer.compare(s1.getAge(), s2.getAge());
             }
         });
 

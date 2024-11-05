@@ -10,6 +10,6 @@ public class ScoreComparator implements Comparator<Sportsman> {
         String score2 = o2.getScore();
 
         return score1.compareTo(score2);
-
+      //  return Double.compare(s1.getScore(), s2.getScore());
     }
 }
