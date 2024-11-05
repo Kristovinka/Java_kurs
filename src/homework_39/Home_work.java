@@ -8,7 +8,7 @@ import java.util.List;
 // две реализации интерфейса List.
 //Метод должен возвращать список состоящий
 // из элементов, которые присутствуют в обеих коллекциях.
-public class home_work {
+public class Home_work {
     public static void main(String[] args) {
 
         Collection<Integer> numbers = new ArrayList<>();
