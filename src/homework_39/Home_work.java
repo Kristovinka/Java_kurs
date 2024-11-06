@@ -31,13 +31,15 @@ public class Home_work {
     }
 
     public static  <T> Collection<T> method2(Collection<T> arr, Collection<T> arr2){
-        arr.retainAll(arr2);
-        return arr;
+        Collection<T> result = new ArrayList<>(arr);
+        result.retainAll(arr2);
+        return result;
     }
 
 
     public static Collection<Integer> method(Collection<Integer> arr, Collection<Integer> arr2){
-        arr.retainAll(arr2);
-        return arr;
+        Collection<Integer> result = new ArrayList<>(arr);
+        result.retainAll(arr2);
+        return result;
     }
 }
