@@ -21,6 +21,7 @@ public class Task3 {
     }
 
     public static Map<String, Integer> intersection(Map<String, Integer> map1, Map<String, Integer> map2){
+
         Map<String, Integer> map = new HashMap<>();
         for (String key : map1.keySet()) {
             if (map2.containsKey(key)) {
