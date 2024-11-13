@@ -32,9 +32,9 @@ public class PasswordValidator {
         for(int i = 0; i < password.length(); i++) {
             if(Character.isUpperCase(password.charAt(i))) { flag = true;
             }
-            if (!flag)  throw new PasswordlValidateException("capital letter must be ");
-
         }
+        if (!flag)  throw new PasswordlValidateException("capital letter must be ");
+
 
         //5. Должeн быть мин 1 спец. символ (!%$@&*()[].,-)
         flag = false;
@@ -44,7 +44,8 @@ public class PasswordValidator {
                     ||  c == ')' || c == '[' ||  c == ']' ||  c == '-' || c == ',' || c == '.' || c == '@') {
                 flag = true;
             }
-            if (!flag)  throw new PasswordlValidateException("special character must be ");
         }
+        if (!flag)  throw new PasswordlValidateException("special character must be ");
+
     }
 }
