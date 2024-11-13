@@ -13,8 +13,9 @@ public class PasswordValidator {
         for(int i = 0; i < password.length();  i++) {
             if (Character.isDigit(password.charAt(i))) {  flag = true;
             }
-            if (!flag) throw new PasswordlValidateException("number must be ");
         }
+        if (!flag) throw new PasswordlValidateException("number must be ");
+
 
         //3. Должна быть мин 1 маленькая буква
         flag = false;
@@ -22,9 +23,9 @@ public class PasswordValidator {
             if(Character.isLowerCase(password.charAt(i))) { flag = true;
                 //task3 = true;
             }
-            if (!flag) throw new PasswordlValidateException("small letter must be");
-
         }
+        if (!flag) throw new PasswordlValidateException("small letter must be");
+
 
         // 4. Должна быть мин 1 большая буква
         flag = false;
