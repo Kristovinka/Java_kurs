@@ -8,7 +8,7 @@ public class ValidateApp {
         try {
             EmailValidator.isEmailValid(email);
 
-            System.out.println(" all gut");
+            System.out.println("Email прошел проверку");
         } catch (EmailValidateException e) {
 
             System.out.println(" Email is not valid");
@@ -22,7 +22,7 @@ public class ValidateApp {
         try {
             PasswordValidator.isPasswordValid(password);
 
-            System.out.println(" all gut");
+            System.out.println(" Password прошел проверку");
         } catch (PasswordlValidateException p) {
 
             System.out.println(" Password is not valid");
