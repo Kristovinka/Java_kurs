@@ -1,5 +1,6 @@
 package lesson_45.validator;
 
+
 public class PasswordValidator {
 
     public static void isPasswordValid(String password) throws PasswordlValidateException {
@@ -9,38 +10,43 @@ public class PasswordValidator {
         if (password.length() < 8 )  throw new PasswordlValidateException("length < 8 = error");
 
         //2. Должна быть мин 1 цифра
-
+        boolean flag = false;
         for(int i = 0; i < password.length();  i++) {
-            if(!Character.isDigit(password.charAt(i))) {
-                throw new PasswordlValidateException("number must be ");
+            if (Character.isDigit(password.charAt(i))) {  flag = true;
             }
         }
+        if (!flag) throw new PasswordlValidateException("number must be ");
+
 
         //3. Должна быть мин 1 маленькая буква
-
+        flag = false;
         for(int i = 0; i < password.length(); i++) {
-            if(!Character.isLowerCase(password.charAt(i))) {
+            if(Character.isLowerCase(password.charAt(i))) { flag = true;
                 //task3 = true;
-                throw new PasswordlValidateException("small letter must be ");
             }
         }
+        if (!flag) throw new PasswordlValidateException("small letter must be");
+
 
         // 4. Должна быть мин 1 большая буква
-
+        flag = false;
         for(int i = 0; i < password.length(); i++) {
-            if(!Character.isUpperCase(password.charAt(i))) {
-                throw new PasswordlValidateException("capital letter must be ");
+            if(Character.isUpperCase(password.charAt(i))) { flag = true;
             }
         }
+        if (!flag)  throw new PasswordlValidateException("capital letter must be ");
+
 
         //5. Должeн быть мин 1 спец. символ (!%$@&*()[].,-)
-
+        flag = false;
         for(int i = 0; i < password.length() ; i++) {
             char c = password.charAt(i);
             if ( c == '!' ||  c == '%' || c == '$' || c == '&' || c == '*' || c == '('
                     ||  c == ')' || c == '[' ||  c == ']' ||  c == '-' || c == ',' || c == '.' || c == '@') {
-
-            }else throw new PasswordlValidateException("special character must be ");
+                flag = true;
+            }
         }
+        if (!flag)  throw new PasswordlValidateException("special character must be ");
+
     }
 }

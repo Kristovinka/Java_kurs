@@ -17,7 +17,7 @@ public class ValidateApp {
         }
 
 
-             String password = "lef7fl-DdL-@d";
+             String password = "lefL0fl-d-@d";
 
         try {
             PasswordValidator.isPasswordValid(password);
