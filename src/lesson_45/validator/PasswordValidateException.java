@@ -1,8 +1,8 @@
 package lesson_45.validator;
 
-public class PasswordlValidateException extends Exception{
+public class PasswordValidateException extends Exception{
 
-    public PasswordlValidateException(String message) {
+    public PasswordValidateException(String message) {
         super(message);
     }
 
